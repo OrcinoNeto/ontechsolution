@@ -1,0 +1,15 @@
+﻿<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <div style="text-align:center; margin-top:4rem;">
+                <h1 style="color:#2563eb; font-size:2.5rem;">Página não encontrada</h1>
+                <p style="font-size:1.2rem; margin-bottom:2rem;">A rota que você tentou acessar não existe ou foi removida.</p>
+                <a href="/" class="cta-btn">Voltar para a Home</a>
+            </div>
+        </LayoutView>
+    </NotFound>
+</Router>
