@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://ontechsolution.com.br/sitemap.xml 
