@@ -13,61 +13,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = OntechSolution.Site
 build_property.RootNamespace = OntechSolution.Site
-build_property.ProjectDir = c:\Users\SMN ESTAGIO\Documents\ONTECHSOLUTIONS\Site\ontechsolution\OntechSolution.Site\
+build_property.ProjectDir = C:\Users\SMN ESTAGIO\Documents\ONTECHSOLUTIONS\Site\ontechsolution\OntechSolution.Site\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\SMN ESTAGIO\Documents\ONTECHSOLUTIONS\Site\ontechsolution\OntechSolution.Site
+build_property.MSBuildProjectDirectory = C:\Users\SMN ESTAGIO\Documents\ONTECHSOLUTIONS\Site\ontechsolution\OntechSolution.Site
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/App.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Layout/Footer.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Layout/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Layout/Header.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Layout/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/BlogSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/BlogSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xCbG9nU2VjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/ContatoSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/ContatoSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xDb250YXRvU2VjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/HomeSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/HomeSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xIb21lU2VjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/PortfolioSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/PortfolioSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xQb3J0Zm9saW9TZWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/ServicosSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/ServicosSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xTZXJ2aWNvc1NlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/SobreSection.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Components/Sections/SobreSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uc1xTb2JyZVNlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Pages/Home.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/_Imports.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Layout/MainLayout.razor]
+[C:/Users/SMN ESTAGIO/Documents/ONTECHSOLUTIONS/Site/ontechsolution/OntechSolution.Site/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-gvsihmglw4
