@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OntechSolution.Site")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b67510eaf2ee9ffd0c75e997cd94aaf0220e159")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4155b8a33c4d5664f103778e07a45653a61c6e96")]
 [assembly: System.Reflection.AssemblyProductAttribute("OntechSolution.Site")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OntechSolution.Site")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
