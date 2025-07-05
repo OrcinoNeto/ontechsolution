@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bo/rgMeXd7U=",
+  "dgSpecHash": "gQ2PncM68t4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
+  "projectFilePath": "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SMN ESTAGIO\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.14\\microsoft.aspnetcore.authorization.8.0.14.nupkg.sha512",
     "C:\\Users\\SMN ESTAGIO\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.14\\microsoft.aspnetcore.components.8.0.14.nupkg.sha512",

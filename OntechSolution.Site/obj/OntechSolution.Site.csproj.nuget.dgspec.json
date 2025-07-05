@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj": {}
+    "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj": {
+    "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
+        "projectUniqueName": "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
         "projectName": "OntechSolution.Site",
-        "projectPath": "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
+        "projectPath": "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\OntechSolution.Site.csproj",
         "packagesPath": "C:\\Users\\SMN ESTAGIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Site\\ontechsolution\\OntechSolution.Site\\obj\\",
+        "outputPath": "c:\\Users\\SMN ESTAGIO\\Documents\\ONTECHSOLUTIONS\\Sites\\ontechsolution\\OntechSolution.Site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
