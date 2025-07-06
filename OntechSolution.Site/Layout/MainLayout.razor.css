@@ -1,19 +1,72 @@
-.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+/* =====================
+   Paleta de Cores e Gradientes
+   ===================== */
+:root {
+    --color-primary: #00f2c3; /* Verde ciano vibrante */
+    --color-secondary: #00c9a7; /* Tom de verde para gradientes e destaques */
+    --color-bg-dark: #0a0a0a; /* Fundo escuro principal */
+    --color-bg-light: #ffffff; /* Fundo claro */
+    --color-card-dark: #1a1a1a; /* Fundo para cards */
+    --color-text: #ffffff; /* Cor de texto principal (em fundos escuros) */
+    --color-text-dark: #0a0a0a; /* Cor de texto para fundos claros */
+    --color-white: #fff;
+    --gradient-main: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(30, 215, 96, 0.1), rgba(30, 215, 96, 0.05));
+    --color-menu-bg: #121212;
 }
 
-main {
-    flex: 1;
+/* =====================
+   Efeito Fade-in
+   ===================== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =====================
+   Gradientes e Utilitários
+   ===================== */
+.bg-gradient-main {
+    background: var(--gradient-main) !important;
+}
+.bg-gradient-card {
+    background: var(--gradient-card) !important;
+}
+.text-primary {
+    color: var(--color-primary) !important;
+}
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.bg-dark-main {
+    background: var(--color-bg-dark) !important;
+}
+.text-gradient-logo {
+    background: var(--gradient-logo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* =====================
+   Sidebar e Top-row
+   ===================== */
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: var(--gradient-main);
 }
 
 .top-row {
-    background-color: #f7f7f7;
+    background-color: var(--color-light);
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
@@ -70,8 +123,91 @@ main {
         width: 0;
     }
 
-    .top-row, article {
+    /* .top-row, article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
+    } */
+}
+
+.header-menu-bg {
+    background: var(--color-menu-bg) !important;
+}
+
+header.navbar {
+    background: var(--color-menu-bg) !important;
+    color: #fff;
+}
+
+/* =====================
+   Header e Navegação
+   ===================== */
+.navbar {
+    background-color: var(--color-menu-bg) !important;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--color-white) !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--color-primary) !important;
+    background-color: rgba(0, 242, 195, 0.1);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =====================
+   Elementos Gráficos Flutuantes
+   ===================== */
+.shape {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.shape-blob {
+    background: var(--gradient-main);
+    border-radius: 50%;
+    animation: float 10s ease-in-out infinite;
+}
+
+.shape-line {
+    background: var(--gradient-main);
+    height: 10px;
+    border-radius: 5px;
+    animation: float 12s ease-in-out infinite, rotate 20s linear infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

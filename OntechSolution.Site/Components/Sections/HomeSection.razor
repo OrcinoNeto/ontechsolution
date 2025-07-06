@@ -1,34 +1,111 @@
 @* Seção Home: Apresentação e CTA *@
-<section id="home" class="d-flex align-items-center min-vh-100 bg-light">
-    <div class="container text-center">
-        <h1 class="display-4 fw-bold mb-3">Impulsione seu negócio com soluções digitais sob medida</h1>
-        <p class="lead mb-4">A Ontech Solution é especialista em criar <strong>sites profissionais</strong>, <strong>sistemas personalizados</strong>, <strong>aplicativos</strong> e <strong>automação</strong> para transformar sua empresa e atrair mais clientes.</p>
-        <a href="#contato" class="btn btn-primary btn-lg px-5">Solicite um orçamento</a>
-        <div class="mt-5 d-flex flex-wrap justify-content-center gap-4">
-            <div class="card shadow-sm border-0" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Criação de Sites</h5>
-                    <p class="card-text">Sites modernos, rápidos e otimizados para o Google, perfeitos para destacar sua marca.</p>
+<section id="home" class="d-flex align-items-center min-vh-100 position-relative overflow-hidden" style="background-color: var(--color-card-dark);">
+    <div class="glass-content">
+        <div class="container text-center position-relative" style="z-index:1;">
+            <h1 class="display-3 fw-bolder mb-3 text-white">Impulsione seu negócio com soluções digitais sob medida</h1>
+            <div class="mt-5 row justify-content-center g-4">
+                @* <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 card-info-hero" style="background-color: var(--color-bg-dark);">
+                        <div class="card-body p-4 card2-info-hero">
+                            <h5 class="card-title text-primary">Criação de Sites</h5>
+                            <p class="card-text text-white-50">Sites modernos, rápidos e otimizados para o Google, perfeitos para destacar sua marca.</p>
+                        </div>
+                    </div>
+                </div> *@
+                <div class="col-lg-3 col-md-6">
+                    <div class="h-100">                       
+                        <div class="light-button">
+                            <button class="bt">
+                                <div class="light-holder">
+                                    <div class="dot"></div>
+                                    <div class="light"></div>
+                                </div>
+                                <div class="button-holder p-3 pb-5 pb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"></svg>
+                                    <h5>Criação de Sites</h5>
+                                    <p>Sites modernos, rápidos e otimizados, perfeitos para destacar sua marca.</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card shadow-sm border-0" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Sistemas Personalizados</h5>
-                    <p class="card-text">Automatize processos e ganhe eficiência com sistemas sob medida para o seu negócio.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="h-100">                       
+                        <div class="light-button">
+                            <button class="bt">
+                                <div class="light-holder">
+                                    <div class="dot"></div>
+                                    <div class="light"></div>
+                                </div>
+                                <div class="button-holder p-3 pb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"></svg>
+                                    <h5>Sistemas Personalizados</h5>
+                                    <p>Automatize processos e ganhe eficiência com sistemas sob medida para o seu negócio.</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card shadow-sm border-0" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Aplicativos Mobile</h5>
-                    <p class="card-text">Leve sua empresa para a palma da mão dos seus clientes com apps Android e iOS.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="h-100">                       
+                        <div class="light-button">
+                            <button class="bt">
+                                <div class="light-holder">
+                                    <div class="dot"></div>
+                                    <div class="light"></div>
+                                </div>
+                                <div class="button-holder p-3 pb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"></svg>
+                                    <h5>Aplicativos Mobile</h5>
+                                    <p>Leve sua empresa para a palma da mão dos seus clientes com apps Android e iOS.</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card shadow-sm border-0" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Automação & Consultoria</h5>
-                    <p class="card-text">Soluções inteligentes para otimizar operações e consultoria em tecnologia.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="h-100">                       
+                        <div class="light-button">
+                            <button class="bt">
+                                <div class="light-holder">
+                                    <div class="dot"></div>
+                                    <div class="light"></div>
+                                </div>
+                                <div class="button-holder p-3 pb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"></svg>
+                                    <h5>Automação & Consultorias</h5>
+                                    <p>Soluções inteligentes para otimizar operações e consultoria em tecnologia.</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                @* <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 card-info-hero" style="background-color: var(--color-bg-dark);">
+                        <div class="card-body p-4 card2-info-hero">
+                            <h5 class="card-title text-primary">Sistemas Personalizados</h5>
+                            <p class="card-text text-white-50">Automatize processos e ganhe eficiência com sistemas sob medida para o seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 card-info-hero" style="background-color: var(--color-bg-dark);">
+                        <div class="card-body p-4 card2-info-hero">
+                            <h5 class="card-title text-primary">Aplicativos Mobile</h5>
+                            <p class="card-text text-white-50">Leve sua empresa para a palma da mão dos seus clientes com apps Android e iOS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 card-info-hero" style="background-color: var(--color-bg-dark);">
+                        <div class="card-body p-4 card2-info-hero">
+                            <h5 class="card-title text-primary">Automação & Consultoria</h5>
+                            <p class="card-text text-white-50">Soluções inteligentes para otimizar operações e consultoria em tecnologia.</p>
+                        </div>
+                    </div>
+                </div> *@
             </div>
+            <a href="#contato" class="btn-orcamento w-50 m-auto mt-5" role="button"><span>Solicite um orçamento</span></a>
         </div>
     </div>
 </section> 

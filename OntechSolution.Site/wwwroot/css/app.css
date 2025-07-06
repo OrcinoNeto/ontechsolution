@@ -1,4 +1,22 @@
+/* Variáveis de cor e gradiente */
+:root {
+    --color-bg-dark: #121727;
+    --color-gradient-start: #2A61B6;
+    --color-gradient-end: #3DB163;
+    --color-card-dark: #1a233a;
+    --color-blue: #0a3255;
+    --color-cerulean: #008aab;
+    --color-green: #69be28;
+    --color-red: #cf202f;
+    --color-white: #ffffff;
+    --spinner-width: 100%;
+    --spinner-height: 100%;
+}
+
+/* Fundo principal */
 html, body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text, #ffffff);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -100,4 +118,390 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/herosection.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+/* Este é o efeito vidro */
+.glass-content {
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    padding: 10rem;
+    backdrop-filter: blur(3px);
+}
+
+
+/* Gradiente para cards */
+.bg-gradient-card {
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+    position: relative;
+    overflow: hidden;
+}
+
+/* Elementos gráficos flutuantes nos cards */
+.card-floating-shape {
+    position: absolute;
+    opacity: 0.18;
+    z-index: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+.card-floating-shape.fade {
+    opacity: 0.08;
+}
+
+/* Fade em elementos dos cards */
+.card .card-title, .card .card-text, .card i {
+    transition: opacity 0.7s, transform 0.7s;
+}
+.card:hover .card-title, .card:hover .card-text, .card:hover i {
+    opacity: 0.92;
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* Animação pulsante para botões */
+.btn-pulse {
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(61, 177, 99, 0.7);
+    transition: box-shadow 0.3s;
+}
+.btn-pulse.rounded-circle, .btn-pulse.btn-success.rounded-circle {
+    animation: pulse-circle 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(61, 177, 99, 0.8);
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(61, 177, 99, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(61, 177, 99, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(61, 177, 99, 0);
+    }
+}
+@keyframes pulse-circle {
+    0% {
+        box-shadow: 0 0 0 0 rgba(61, 177, 99, 0.8);
+    }
+    70% {
+        box-shadow: 0 0 0 24px rgba(61, 177, 99, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(61, 177, 99, 0);
+    }
+}
+
+/* Exemplo de botão WhatsApp pulsante */
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 2rem;
+    position: relative;
+}
+
+/* Ajuste para garantir contraste do texto nos cards */
+.bg-gradient-card, .card.bg-gradient-card .card-title, .card.bg-gradient-card .card-text {
+    color: #fff;
+}
+
+.btn-orcamento {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-orcamento:active,
+.btn-orcamento:hover {
+  outline: 0;
+}
+
+.btn-orcamento span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn-orcamento:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .btn-orcamento {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.load-wrapper {
+  z-index: 5000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#spinner-img {
+  width: 50vw;
+  max-width: 200px;
+  height: auto;
+}
+
+.spin {
+  border: 3px solid var(--color-blue);
+  position: absolute;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+#spinner1 {
+  border-color: var(--color-blue);
+  width: calc(var(--spinner-width) + 60px);
+  height: calc(var(--spinner-height) + 60px);
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+#spinner2 {
+  border-color: var(--color-red);
+  width: calc(var(--spinner-width) + 80px);
+  height: calc(var(--spinner-height) + 80px);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+#spinner3 {
+  border-color: var(--color-green);
+  width: calc(var(--spinner-width) + 100px);
+  height: calc(var(--spinner-height) + 100px);
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+#spinner4 {
+  border-color: var(--color-cerulean);
+  width: calc(var(--spinner-width) + 120px);
+  height: calc(var(--spinner-height) + 120px);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* From Uiverse.io by Tiagoadag */ 
+.card-info-service {
+ background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.card2-info-service {
+ background-color: #121727;
+ border-radius: none;
+ transition: all .2s;
+}
+
+.card2-info-service:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.card-info-hero:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+/* .card-service {
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card-service div {
+  z-index: 1;
+}
+
+.card-service::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  background-image: linear-gradient(180deg, #3EB165, #2A61B7);
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-service::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}  */
+
+/* From Uiverse.io by kamehame-ha */ 
+.light-button button.bt {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: default;
+}
+
+.light-button button.bt .button-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0f0f0f;
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+
+.light-button button.bt .button-holder svg {
+  height: 50px;
+  fill: #0f0f0f;
+  transition: 300ms;
+}
+
+.light-button button.bt .light-holder {
+  position: absolute;
+  height: 280px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light-button button.bt .light-holder .dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 700px;
+  height: 150px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+
+.light-button button.bt:hover .button-holder svg {
+  fill: rgb(88, 160, 242);
+}
+
+.light-button button.bt:hover .button-holder {
+  color: rgb(88, 160, 242);
+  outline: rgb(88, 160, 242) 2px solid;
+  outline-offset: 2px;
+}
+
+.light-button button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(88, 160, 242) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
