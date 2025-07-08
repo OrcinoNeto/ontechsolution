@@ -2,5 +2,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "outputDirectory": "OntechSolution.Site/wwwroot"
+  "outputDirectory": "static"
 }
