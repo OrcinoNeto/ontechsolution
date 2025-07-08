@@ -1,0 +1,38 @@
+@* Divider de onda animada, com opção de invasão (overlap) *@
+@code {
+    [Parameter]
+    public string Overlap { get; set; } = null;
+
+    private string OverlapClass => Overlap switch
+    {
+        "Top" => "divider-overlap-top",
+        "Bottom" => "divider-overlap-bottom",
+        "Both" => "divider-overlap-both",
+        _ => string.Empty
+    };
+}
+
+<div class="divider-wave-wrapper @OverlapClass">
+    <svg class="divider-wave"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28"
+         preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+        </defs>
+        <g class="parallax1">
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="var(--color-gradient-end)" />
+        </g>
+        <g class="parallax2">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="var(--color-gradient-start)" />
+        </g>
+        <g class="parallax3">
+            <use xlink:href="#gentle-wave" x="50" y="9" fill="var(--color-blue)" />
+        </g>
+        <g class="parallax4">
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="var(--color-bg-dark)" />
+        </g>
+    </svg>
+</div> 
